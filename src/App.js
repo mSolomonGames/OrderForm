@@ -4,7 +4,7 @@ import './App.css';
 import Logo from "./img/Logo.png"
 
 import { makeStyles, withStyles } from '@material-ui/core/styles';
-import { Grid, Paper, Typography, Select, FormControl, FormGroup, Switch, MenuItem, InputLabel, CardMedia, CardActionArea, Card, CardContent } from '@material-ui/core/';
+import { Grid, Paper, Typography, Select, FormControl, FormGroup, Switch, MenuItem, InputLabel, CardMedia, CardActionArea, Card, CardContent , List} from '@material-ui/core/';
 
 import CompanyDetails from './components/CompanyDetails';
 import IndividualDetails from './components/IndividualDetails';
@@ -12,6 +12,9 @@ import WirelessPackages from './components/WirelessPackages';
 import FibrePackages from './components/FibrePackages';
 import EFT from './components/EFT';
 import Debit from './components/Debit';
+import Mandate from "./components/Mandate";
+import TCs from "./components/TCs";
+import InstallationPackages from "./components/InstallationPackages";
 
 const useStyles = makeStyles(theme => ({
    formControl: {
@@ -191,6 +194,10 @@ export default function App() {
                         </Paper>
                      </Grid>
                      <Grid item xs={12}>
+                        <InstallationPackages />
+
+                     </Grid>
+                     <Grid item xs={12}>
                         <Paper>
                            <Grid container justify="flex-end">
                               <Grid item xs={6}>
@@ -239,6 +246,14 @@ export default function App() {
                               </Grid>
                               <Grid item xs={12} >
                                  {payment === 'eft' ? <EFT /> : (payment === 'debit' ? <Debit /> :  <div></div>)  }
+                              </Grid>
+                              <Grid item xs={12}>
+                                 {paymentDate === '' ? <div></div> : <Mandate />}
+                                 
+                              </Grid>
+                              <Grid item xs={12}>
+                                 <TCs />
+                                 
                               </Grid>
                               
                            </Grid>
