@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/OrderForm/static/css/main.5f361e03.chunk.css",
+    "main.js": "/OrderForm/static/js/main.a424ea9a.chunk.js",
+    "main.js.map": "/OrderForm/static/js/main.a424ea9a.chunk.js.map",
+    "runtime-main.js": "/OrderForm/static/js/runtime-main.6a2648dd.js",
+    "runtime-main.js.map": "/OrderForm/static/js/runtime-main.6a2648dd.js.map",
+    "static/js/2.d3f14b45.chunk.js": "/OrderForm/static/js/2.d3f14b45.chunk.js",
+    "static/js/2.d3f14b45.chunk.js.map": "/OrderForm/static/js/2.d3f14b45.chunk.js.map",
+    "index.html": "/OrderForm/index.html",
+    "precache-manifest.4a7276c01bfb0308e213e2932b141e04.js": "/OrderForm/precache-manifest.4a7276c01bfb0308e213e2932b141e04.js",
+    "service-worker.js": "/OrderForm/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/OrderForm/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.d3f14b45.chunk.js.LICENSE.txt": "/OrderForm/static/js/2.d3f14b45.chunk.js.LICENSE.txt",
+    "static/media/Logo.png": "/OrderForm/static/media/Logo.4035fb51.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6a2648dd.js",
+    "static/js/2.d3f14b45.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.a424ea9a.chunk.js"
+  ]
+}
