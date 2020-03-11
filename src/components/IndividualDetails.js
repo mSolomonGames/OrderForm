@@ -1,11 +1,23 @@
 import React from 'react';
 import {Grid, Paper, Typography, Select, FormControl, FormGroup, Switch, TextField} from '@material-ui/core/';
 
+import { makeStyles, withStyles, createMuiTheme, withTheme } from '@material-ui/core/styles';
+
+const useStyles = makeStyles(stuff => ({
+    grid:{
+        display: 'flex',
+    }
+
+}));
+
 export default function IndividualDetails(){
+    const classes = useStyles();
+
+    
     return (
         <React.Fragment>
             <Paper>            
-                <Grid container spacing={0}>
+                <Grid className={classes.grid} container xs={10} spacing={0} justify="center">
                     {/* <Grid item xs={12}>
                         <Typography align="center" variant="h2">Client Details</Typography>
                     </Grid> */}
@@ -45,18 +57,6 @@ export default function IndividualDetails(){
 
                 </Grid>
             </Paper>
-        
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-        
         </React.Fragment>      
     )
 }

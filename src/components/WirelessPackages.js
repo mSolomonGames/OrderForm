@@ -11,7 +11,7 @@ export default function WirelessPackages(props){
         <Paper>            
             <Grid container spacing={0}>
                 <Grid item xs={12}>
-                    <Typography align="center" variant="h2">Wireless Packages</Typography>
+                    <Typography color="textSecondary" align="center" variant="h2">Wireless Packages</Typography>
                 </Grid>
                 <Grid item xs={12}>
                     {type === 'individual' ? <IndivWireless /> : ( type === 'company' ? <CompanyWireless /> : <div></div>) }

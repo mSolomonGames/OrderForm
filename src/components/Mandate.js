@@ -9,8 +9,8 @@ export default function Mandate(){
             <Paper>            
                 <Grid container spacing={0} justify="center">
                     <Grid item xs={10}>
-                        <Typography align="center" variant="h4">Accept this as digital signature (tick box + fields)</Typography>
-                        <Typography align="center" variant="body1">This signed Authority and Mandate refers to our contract dated (“the Agreement”).
+                        <Typography align="center" color="textSecondary" variant="h4">Accept this as digital signature (tick box + fields)</Typography>
+                        <Typography align="center" color="textSecondary" variant="body1">This signed Authority and Mandate refers to our contract dated (“the Agreement”).
                             I/We hereby authorise you to issue and deliver payment instructions to your Banker for collection against my/our abovementioned
                             account at my/our above-mentioned Bank (or any other bank or branch to which I/we may transfer my/our account)
                             on condition that the sum of such payment instructions will never exceed my/our obligations as agreed to in the Agreement and

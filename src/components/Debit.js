@@ -10,12 +10,12 @@ export default function Debit(){
             <Paper>            
                 <Grid container spacing={0} justify="center">
                     <Grid item xs={12} >
-                        <Typography align="center" variant="h2">Debit</Typography>
+                        <Typography color="textSecondary"  align="center" variant="h2">Debit</Typography>
                     </Grid>
                     <Grid item xs={10}>
                         <Grid container justify="center">
                             <Grid item xs ={12}>
-                            <Typography align="center" variant="h4">Bank Debit Order Instruction / Credit Card Authority</Typography>
+                            <Typography color="textSecondary" align="center" variant="h4">Bank Debit Order Instruction / Credit Card Authority</Typography>
 
                             </Grid>
                             <Grid item xs ={2}>

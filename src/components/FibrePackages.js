@@ -11,7 +11,7 @@ export default function FibrePackages(props){
             <Paper>            
                 <Grid container spacing={0}>
                     <Grid item xs={12}>
-                        <Typography align="center" variant="h2">Fibre Packages</Typography>
+                        <Typography align="center" color="textSecondary" variant="h2">Fibre Packages</Typography>
                     </Grid>
                     {/* <Grid item xs={12}>
                         {variable === 'individual' ? <Typography align="center" variant="h2">Individual</Typography> : <Typography align="center" variant="h2">Business</Typography>}

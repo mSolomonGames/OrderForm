@@ -4,8 +4,8 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles(theme => ({
     root: {
-      width: '100%',
-      maxWidth: 360,
+    //   width: '100%',
+    //   maxWidth: 360,
       backgroundColor: theme.palette.background.paper,
     },
   }));
@@ -32,14 +32,14 @@ export default function IndivWireless(){
                     selected={selectedIndex === 0}
                     onClick={event => handleListItemClick(event, 0)}
                     >
-                    <ListItemText primary="Individual Wireless Package 1" />
+                    <ListItemText primary={<Typography align="center"  variant="h6" color="textSecondary">Individual Wireless Package 1</Typography>} />
                     </ListItem>
                     <ListItem
                     button
                     selected={selectedIndex === 1}
                     onClick={event => handleListItemClick(event, 1)}
                     >
-                    <ListItemText primary="Individual Wireless Package 2" />
+                    <ListItemText primary={<Typography  align="center" variant="h6" color="textSecondary">Individual Wireless Package 2</Typography>} />
                     </ListItem>
 
                     <ListItem
@@ -47,14 +47,14 @@ export default function IndivWireless(){
                     selected={selectedIndex === 2}
                     onClick={event => handleListItemClick(event, 2)}
                     >
-                    <ListItemText primary="Individual Wireless Package 3" />
+                    <ListItemText primary={<Typography align="center" variant="h6" color="textSecondary">Individual Wireless Package 3</Typography>} />
                     </ListItem>
                     <ListItem
                     button
                     selected={selectedIndex === 3}
                     onClick={event => handleListItemClick(event, 3)}
                     >
-                    <ListItemText primary="Individual Wireless Package 4" />
+                    <ListItemText primary={<Typography align="center"  variant="h6" color="textSecondary">Individual Wireless Package 4</Typography>} />
                     </ListItem>
                 </List>
                 </Grid>
