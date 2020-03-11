@@ -1,0 +1,10 @@
+export { default as OrderForm } from './OrderForm';
+export { default as Header } from './Header';
+export { default as Footer } from './Footer';
+export { default as BankDetails } from './BankDetails';
+export { default as PaymentDetails } from './PaymentDetails';
+export { default as InstallationDetails } from './InstallationDetails';
+export { default as PackageDetails } from './PackageDetails';
+export { default as ClientDetails } from './ClientDetails';
+export { default as IndividualForm } from './IndividualForm';
+export { default as CompanyForm } from './CompanyForm';
