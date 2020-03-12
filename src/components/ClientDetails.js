@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
 import { Paper, makeStyles, Grid, Typography, Select, MenuItem, InputLabel } from '@material-ui/core';
 import { IndividualForm, CompanyForm } from '../components';
+import { AppContext } from '../context';
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -26,7 +27,7 @@ const useStyles = makeStyles(theme => ({
 
 export default () => {
     const classes = useStyles();
-    const [applicationType, setApplicationType] = useState("individual");
+    const [state, setState ] = useContext(AppContext);
 
     return (
         <Paper className={classes.root}>
@@ -40,8 +41,8 @@ export default () => {
                         className={classes.dropDown}
                         labelId="applicationTypeLabel"
                         id="applicationType"
-                        value={applicationType}
-                        onChange={e => setApplicationType(e.target.value)}
+                        value={state.applicationType}
+                        onChange={e => setState(state => {return {...state, applicationType: e.target.value}})}
                         color="primary"
                     >
                         <MenuItem value={'individual'}>Individual</MenuItem>
@@ -49,7 +50,7 @@ export default () => {
                     </Select>
                 </Grid>
                 <Grid item xs={12}>
-                    {applicationType === "individual" ? <IndividualForm /> : <CompanyForm />}
+                    {state.applicationType === "individual" ? <IndividualForm /> : <CompanyForm />}
                 </Grid>
             </Grid>
         </Paper>
